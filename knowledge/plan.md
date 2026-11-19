@@ -6,35 +6,37 @@
 
 ## 目前狀態
 
-- **階段：第一版原型已建立，本地 Git 專案已準備。** 遊戲原型與 GitHub Pages Actions 工作流程已寫好；尚未推送到 GitHub，也尚未上線。
-- **平台與技術：** 單頁瀏覽器遊戲，使用 Three.js（CDN）繪製 3D 場景；GitHub Actions 部署到 GitHub Pages。
-- **目前玩法：** 第三人稱追車視角、鍵盤加速／煞車／轉向／手煞車、彎道賽道、速度表、圈數與完賽訊息。
-- **待完成的外部步驟：** 連結 GitHub 帳號、建立遠端 repository、推送程式碼，並確認 GitHub Actions 成功部署。
+- **階段：第一版原型已透過 GitHub Pages 公開發布。** 公開 repo：`neildirac/apex-racing-game`；網站已載入 3D 場景。賽道路面網格的三角面朝向已修正，修正版正在等待下一次 Actions 發布。
+- **平台與技術：** 單頁瀏覽器遊戲，使用 Three.js CDN 繪製 3D 場景；GitHub Actions 部署到 GitHub Pages。
+- **目前玩法：** 第三人稱追車視角、鍵盤加速／煞車／轉向／手煞車、彎道賽道、速度表、三圈賽事、離道減速、完賽訊息與重置。
+- **發布狀態：** repo 已建立並推送；Pages source 設為 GitHub Actions。首次 workflow 因 Pages 尚未啟用而失敗；啟用來源後重跑成功。
 
 ## 已完成
 
 - [x] 確立專案目標：製作 3D 賽車遊戲。
-- [x] 建立單頁 3D 賽車原型：賽車、賽道、追車鏡頭、鍵盤操作與 HUD。
-- [x] 加入三圈賽事流程、離開賽道時減速，以及重置控制。
-- [x] 建立 GitHub Pages 的 GitHub Actions 部署工作流程。
-- [x] 撰寫專案 README 與操作說明。
+- [x] 建立單頁 3D 賽車原型：賽車、賽道、場景、追車鏡頭、操作與 HUD。
+- [x] 加入三圈賽事流程、離開賽道時減速、完賽狀態與重置控制。
+- [x] 建立公開 GitHub repo 並推送專案檔案。
+- [x] 設定 GitHub Pages 以 GitHub Actions 發布。
+- [x] 驗證 workflow 成功並確認公開網站可載入。
+- [x] 修正賽道路面三角面朝向，確保路面能正確顯示。
 
 ## 路線圖
 
 ### 里程碑 1：可玩的駕駛原型
 
-- [x] 決定瀏覽器平台與 Three.js 技術方案。
+- [x] 選定瀏覽器平台與 Three.js 技術方案。
 - [x] 建立 3D 場景、玩家車輛與測試賽道。
 - [x] 加入加速、煞車、轉向、手煞車與追車鏡頭。
 - [x] 加入速度顯示、圈數、完賽狀態與重置。
-- [ ] 在瀏覽器實際遊玩，調整操控和圈數判定。
+- [ ] 實際試玩並調整操控與圈數判定。
 
 ### 里程碑 2：GitHub 專案與線上發布
 
-- [ ] 連結 GitHub 帳號並建立遠端 repository。
-- [ ] 推送本地專案與 GitHub Actions 工作流程。
-- [ ] 啟用 GitHub Pages 的 GitHub Actions 發布來源。
-- [ ] 確認 workflow 成功，並檢查公開網站可正常載入。
+- [x] 建立遠端 repository 並推送本地專案。
+- [x] 設定 Pages 的 GitHub Actions 發布來源。
+- [x] 確認 Actions workflow 成功。
+- [x] 確認公開 Pages 網站能載入 3D 遊戲。
 
 ### 里程碑 3：內容與完成度
 
@@ -45,4 +47,4 @@
 
 ## 下一步
 
-先完成 GitHub 帳號連結，然後建立 repository 並執行首次 Pages 部署。發布後再到瀏覽器實際試玩，依結果修整操控與賽事流程。
+等這次路面修正部署完成後，實際試玩並依手感調整車輛控制與圈數判定。
