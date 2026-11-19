@@ -6,7 +6,7 @@
 
 ## 目前狀態
 
-- **階段：第一版原型已透過 GitHub Pages 公開發布。** 公開 repo：`neildirac/apex-racing-game`；網站已載入 3D 場景。賽道路面網格的三角面朝向已修正，修正版正在等待下一次 Actions 發布。
+- **階段：第一版原型已透過 GitHub Pages 公開發布。** 公開 repo：`neildirac/apex-racing-game`；網站已載入 3D 場景；賽道路面已修正，最新一次 Actions 部署成功。
 - **平台與技術：** 單頁瀏覽器遊戲，使用 Three.js CDN 繪製 3D 場景；GitHub Actions 部署到 GitHub Pages。
 - **目前玩法：** 第三人稱追車視角、鍵盤加速／煞車／轉向／手煞車、彎道賽道、速度表、三圈賽事、離道減速、完賽訊息與重置。
 - **發布狀態：** repo 已建立並推送；Pages source 設為 GitHub Actions。首次 workflow 因 Pages 尚未啟用而失敗；啟用來源後重跑成功。
